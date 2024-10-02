@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Jaro:opsz@6..72&family=Major+Mono+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+  
+    background-color: rgb(11, 11, 11);
+    color:#f5f5f5;
+    margin:0;
+    padding: 0;
+ 
+}
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    
+}
+
+
+.logo{
+    background-image: url(./assets/Epic_logo.png);   
+    height:47px ;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.lii{
+    list-style: none;
+   
+}
+
+a i.f{
+    margin-right: 15px;
+}
+
+.container1{
+    background-color: rgb(13, 13, 13);
+    display: inline-flex;
+    float: left;
+    flex-direction: column;
+    height: 380px;
+    /* padding: 50px; */
+
+}
+
+.container2{
+    display: flex;
+    /* width: 80%; */
+    flex: 1;
+    /* border: solid 2px wheat; */
+    justify-content: space-between;
+    padding:25px ;
+    background-color: rgb(11, 11, 11);
+}
+.nav{
+    margin-top: 40px;
+    /* border: solid 2px wheat; */
+}
+.nav1{
+    display: flex;
+    padding: 20px;
+    /* border: solid 2px wheat; */
+}
+
+.nav2{
+    display: flex;
+    padding: 20px;
+    /* border: solid 2px wheat; */
+}
+
+.navho:hover{
+    color: red;
+}
+ .search{
+    background-color:black;;
+    border-radius: 25px;
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border-color: #f5f5f5; 
+    border: none;
+    color: #f5f5f5;
+
+} 
+/* .search_icon{
+    border:2px solid white;
+    padding:10px;
+} */
+
+
+
+
+ /* div.nav1 div.search_icon{
+    background-color: rgb(90, 96, 96);  */
+    /* border: solid wheat; */
+    /* padding: 2px;
+    border-radius: 35px;
+    right:0px;
+}  */
+div.nav>ul{
+    height:200px;
+    width: 300px;
+    /* border: solid 2px wheat;*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+div.nav>ul .lii{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    /* text-align: center; */
+    /* border: solid 2px wheat; */
+    transition: 0.7ms;
+}
+
+div.nav>ul .lii:hover{
+    background-color: rgba(55,55,55,255);
+    border-radius: 15px;
+}
+
+.search >ul{
+    display: flex;
+}
+div.nav1 > ul{
+    display: flex;
+    list-style: none;
+}
+
+ div.nav2 > ul{
+    list-style: none;
+    display: flex;
+ }
+
+ div.nav2 > ul li{
+    padding-right:80px ;
+ }
+
+ div.nav1 > ul li{
+    padding-right:15px ;
+ }
+
+ a{
+    text-decoration: none;
+    color: whitesmoke;
+ }
+
+ .off{
+    height: 200px;
+    width: 400px;
+    /* background-color: aqua; */
+    margin-left: 30px;
+    border-radius: 25px;
+  
+ }
+ 
+ div.offer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-align: center;
+    /* border: solid 2px; */
+ }
+
+div.off_img1{
+    align-content: center;
+    background-image: url(./assets/off_img1.jpg);
+    background-size: cover;
+ }
+
+div.off_img2{
+    align-content: center;
+    background-image: url(./assets/off_img3.png);
+    background-size: cover;
+ }
+ 
+div.off_img3{
+    align-content: center;
+    background-image: url(./assets/off_img2.png);
+    background-size: cover; 
+ }
+
+ .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px wheat; */
+    margin-top: 30px;
+ } 
+
+ .wrapper>.wrapper_holder{
+    height: 65vh;
+    width: 75vw;
+    /* border: solid 2px wheat; */
+    border-radius: 25px;
+    overflow-x: auto;
+    scrollbar-width: none;
+ }
+
+ .wrapper_slider{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    animation: slider;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+ 
+ }
+
+ #s1{
+    background-image: url(./assets/RDR_2.png);
+    background-size:cover ;
+    border-radius: 25px;
+  
+ }
+
+
+ #s2{
+    background-image: url(./assets/marvels-spider-man.jpeg);
+    background-size:cover ;
+    border-radius: 25px;
+ }
+
+ #s3{
+    background-image: url(./assets/last-of-us-part-2-remastered.jpg);
+    background-size:cover ;
+    border-radius: 25px;
+ }
+
+ #s4{
+    background-image: url(./assets/god-of-war-ragnarok.jpg);
+    background-size:cover ;
+    border-radius: 25px;
+ }
+
+
+ @keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+    
+ }
+
+.grid_container{
+    margin-left: 30px;
+}
+
+ .grid_container>.grid_box{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(4,400px);
+    justify-content: center;
+    gap: 60px 30px;
+ }
+
+ .gt:hover{
+    padding: 5px;
+ }
+.gt{
+    height: 320px;
+    width: 300px;
+    border-radius: 25px;
+    transition: 0.5s;
+    /* background-color: beige;
+    border: solid 2px wheat; */
+}
+
+.gb{
+    height: 80px;
+    width: 300px;
+    transition: 0.5;
+    /* background-color: rgb(183, 183, 14);
+    border: solid 2px wheat; */
+}
+
+.g1{
+    background-image: url(./assets/Uncharted_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g2{
+    background-image: url(./assets/Alan_Awake_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g3{
+    background-image: url(./assets/GTA_V.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g4{
+    background-image: url(./assets/GHOST\ of\ THUSIMA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g5{
+    background-image: url(./assets/GTA_VI.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.g6{
+    background-image: url(./assets/RDR_2\(p\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g7{
+    background-image: url(./assets/Detroit_become_human.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.g8{
+    background-image: url(./assets/marvels-spider-man.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g9{
+    background-image: url(./assets/AVATAR.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g10{
+    background-image: url(./assets/cyberpunk_2077.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g11{
+    background-image: url(./assets/sifu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g12{
+    background-image: url(./assets/last-of-us-part-2-remastered.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g13{
+    background-image: url(./assets/wwe_2k24.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.g14{
+    background-image: url(./assets/FIFA_24.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.g15{
+    background-image: url(./assets/AC.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.g16{
+    background-image: url(./assets/mortal_combat_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.price{
+    display: flex;
+    align-items: center;
+    /* border: solid 2px wheat; */
+    margin-left: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 36, 239);
+    /* border: solid 2px wheat; */
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    font-size: medium;
+    padding: 5px;
+}
+
+.tc{
+    margin: 40px 10px;
+    text-align: center;
+}
+
+.detail_icons{
+    /* border: solid 2px wheat; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin: 80px 20px;
+    background-color: #7c787820;
+    padding: 5px;
+}

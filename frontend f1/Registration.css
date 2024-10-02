@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Jaro:opsz@6..72&family=Major+Mono+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 55px;
+    color:rgb(82, 69, 45) ;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.content a{
+   font-size: 25px;
+   color:rgb(71, 71, 36) ;
+   text-decoration: none;
+   padding: 15px 25px;
+   border-radius: 50px;
+   transition: 0.3s;
+}
+
+.content a:hover{
+    background-color:blanchedalmond;
+
+}
+
+.backimg{
+    position: absolute;
+    right: 0;
+    bottom: o;
+    z-index: -1;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+
+}
+
+.inp>input{
+          margin: 20px 10px;
+          padding: 20px;
+          border-radius: 15px;
+          border: none;
+          background-color: transparent;
+          color: rgba(164, 247, 0, 0.379);
+          font-size: xx-large;
+}
+
+.log{
+    display: flex;
+    /* border: solid 2px wheat; */
+    width: 500px;
+    justify-content: space-between;
+}
+p{
+    color: brown;
+    display: flex;
+    align-items: center;
+}
+@media(min-aspect-ratio:16/9){
+    .backimg{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .backimg{
+        width: auto;
+        height: 100%;
+    }
+}
+
